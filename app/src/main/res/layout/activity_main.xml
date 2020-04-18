@@ -1,0 +1,33 @@
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/camera"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="From Camera"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/gallery"
+        android:paddingTop="30dp"
+        android:textSize="30sp"/>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="From Gallery"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:textSize="30sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
